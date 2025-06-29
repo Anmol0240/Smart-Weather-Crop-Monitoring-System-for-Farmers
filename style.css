@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #4CAF50, #2196F3);
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+}
+
+.weather-app {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.weather-app:hover {
+    transform: scale(1.02);
+}
+
+.app-title {
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+.app-subtitle {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.location-search {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#city-input {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+#city-input:focus {
+    border-color: #2196F3;
+}
+
+#city-input-btn {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#city-input-btn:hover {
+    background-color: #1565C0;
+}
+
+.current-weather {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.location h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#current-date {
+    color: #666;
+    font-size: 14px;
+}
+
+.weather-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.temp-display {
+    font-size: 48px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+.degree {
+    font-size: 24px;
+    margin-left: 5px;
+}
+
+#weather-icon-container {
+    margin-left: 15px;
+    display: inline-block;
+}
+
+#weather-icon {
+    width: 60px;
+    height: 60px;
+    display: block;
+}
+
+.weather-condition {
+    text-align: right;
+}
+
+#description {
+    font-size: 16px;
+    color: #333;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.feels-like {
+    font-size: 14px;
+    color: #666;
+}
+
+.hourly-forecast, .daily-forecast {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.hourly-forecast h3, .daily-forecast h3 {
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.hourly-container {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    padding: 10px 0;
+    gap: 10px;
+}
+
+.hourly-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 60px;
+}
+
+.hourly-item .time {
+    font-size: 14px;
+    color: #666;
+}
+
+.hourly-item .temp {
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.hourly-item img {
+    width: 40px;
+    height: 40px;
+}
+
+.daily-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.daily-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.daily-item:last-child {
+    border-bottom: none;
+}
+
+.daily-item .day {
+    font-size: 14px;
+    font-weight: 500;
+    width: 100px;
+}
+
+.daily-item .weather-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.daily-item .temps {
+    display: flex;
+    gap: 15px;
+}
+
+.daily-item .high {
+    font-weight: 500;
+}
+
+.weather-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.detail-card {
+    padding: 10px;
+}
+
+.detail-card h4 {
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.detail-card div {
+    font-size: 16px;
+    margin: 3px 0;
+    color: #333;
+}
+
+.sun-times {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.sun-time {
+    text-align: center;
+}
+
+.sun-time h4 {
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.sun-time div {
+    font-size: 16px;
+    color: #333;
+}
+
+.topline h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 80px;
+}
+
+#plantbtn {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+#planticon svg {
+    width: 32px;
+    height: 32px;
+}
+
+#plantdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
