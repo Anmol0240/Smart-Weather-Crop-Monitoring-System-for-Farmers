@@ -34,7 +34,7 @@ This project is a powerful web-based dashboard that helps farmers make informed 
 | ![Weather 1](assets/text.txt/weather%20-1.jpg) | ![Dashboard 1](assets/text.txt/dashboard%20-1.jpg) |
 | ![Weather 2](assets/text.txt/weather-2.jpg) | ![Dashboard 2](assets/text.txt/dashboard%20-2.jpg) |
 
-🎬 **[Screen Recording Available](assets/Screen%20Recording%202025-04-26%20230627.mp4)**
+🎬 **[Screen Recording Available](assets/text.txt/demo-vidio.mp4)**
 
 > 📸 Screenshots and demo recordings are stored inside the `assets/` folder.
 
@@ -55,8 +55,8 @@ Just open `index.html` in any browser to start using the weather dashboard.
 
 ## 🌐 Live Demo
 
-> 🔗 *Coming soon!*  
-(*You can deploy it using GitHub Pages or Netlify and paste the link here.*)
+🔗 [Click here to view the live project](https://anmol0240.github.io/Smart-Weather-Crop-Monitoring-System-for-Farmers/)
+
 
 ---
 
